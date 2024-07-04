@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar .nav-link {
+            color: #fff;
+        }
+        .carousel-item {
+            height: 80vh;
+            min-height: 400px;
+            background: no-repeat center center scroll;
+            background-size: cover;
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .top-bar {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        .top-bar a {
+            color: #333;
+            margin: 0 15px;
+        }
+        .social-icons a {
+            margin: 0 5px;
+            color: #333;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url(image/image8.jpg);
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #dadd33;
+            font-size: 3em;
+            font-family: 'Georgia', serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background: #28a745;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #218838;
+        }
+
+    </style>
+</head>
+<body>
+
+    <body>
+        <div class="top-bar text-center">
+            <div class="container">
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Lembah Sireh, 15050 Kota Bharu</a>
+                <a href="#"><i class="fas fa-phone"></i> (+60) 19-982 0994</a>
+                <a href="#"><i class="fas fa-envelope"></i> wadi.rocknroll@gmail.com</a>
+                <div class="social-icons d-inline">
+                    <a href="https://wa.me/199820994?text=I%27m%20testing%20your%20website"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/wadi.yuhuu/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/noor-wadihah-mohammad-bba847180/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/nr_wadi/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Welcome To My Website</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="myeducation.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="myexperience.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contactme.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <h1>Contact Me</h1>
+
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+<form class="contact-form" action="send_mail.php" method="POST">
+
+</html>
+
+<style>
+
+    header h1 {
+                margin: 0;
+                font-size: 3em;
+                font-family: 'Georgia', serif;
+            }
+</style>

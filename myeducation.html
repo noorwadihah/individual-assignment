@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        header {
+            margin: 0;
+            font-size: 3em;
+            font-family: 'Georgia', serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+            text-align: center;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #e8ebdfd8;
+            background-image: url(image/image12.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar .nav-link {
+            color: #fff;
+        }
+        .carousel-item {
+            height: 80vh;
+            min-height: 400px;
+            background: no-repeat center center scroll;
+            background-size: cover;
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .top-bar {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        .top-bar a {
+            color: #333;
+            margin: 0 15px;
+        }
+        .social-icons a {
+            margin: 0 5px;
+            color: #333;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .main {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #4bacf690;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .sidebar h2 {
+            font-size: 1.5em;
+            color: #f56767;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .news-link {
+            display: block;
+            padding: 10px 15px;
+            background-color: #061e38;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .news-link:hover {
+            background-color: #02101f79;
+        }
+        .content {
+            flex: 3;
+            background-color: rgba(7, 17, 46, 0.521);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content h2 {
+            text-align: center;
+        }
+        .content p {
+            text-align: justify;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #6CC644;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .buttons button:hover {
+            background-color: #5ba43c;
+        }
+        .sliding-box {
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            animation: slide 10s infinite alternate;
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        .education-logo {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar text-center">
+        <div class="container">
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Lembah Sireh, 15050 Kota Bharu</a>
+            <a href="#"><i class="fas fa-phone"></i> (+60) 19-982 0994</a>
+            <a href="#"><i class="fas fa-envelope"></i> wadi.rocknroll@gmail.com</a>
+            <div class="social-icons d-inline">
+                <a href="https://wa.me/199820994?text=I%27m%20testing%20your%20website"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/wadi.yuhuu/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/noor-wadihah-mohammad-bba847180/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/nr_wadi/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Welcome To My Website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="myeducation.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myexperience.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactme.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>My Education</h1>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="image/slide1.jpg" alt="Slide 1">
+            <img src="image/slide2.png" alt="Slide 2">
+            <img src="image/slide3.png" alt="Slide 3">
+            <img src="image/slide4.png" alt="Slide 4">
+            <img src="image/slide5.png" alt="Slide 5">
+            <img src="image/slide6.png" alt="Slide 6">
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <h2>Latest News</h2>
+            <a href="https://www.bharian.com.my/berita/nasional/2024/05/1251767/spm-2023-lebih-10000-calon-tak-hadir-kpm-akan-laksana-intervensi" class="news-link">SPM 2023: Lebih 10,000 calon tak hadir, KPM akan laksana intervensi tangani ketidakhadiran</a>
+        </div>
+        <div class="content">
+            <img src="image/stamad.png" alt="high school logo" class="education-logo">
+            <h2>SMK Sultan Ahmad</h2>
+            <h4>2013 - 2017</h4>
+            <p>I have attended school here from 2013 to 2017. It was a very sweet experience for me. For me to say everything, there would be no end to those words. The experience with the people there is not something I can buy. It's a memory that I can only remember. Unfortunately, I won't be able to repeat it.</p>
+        </div>
+        <div class="content">
+            <img src="image/uitm.png" alt="university logo" class="education-logo">
+            <h2>Universiti Teknologi MARA</h2>
+            <h4>2019 - 2025</h4>
+            <p>My university experience was unforgettable. I gained not only academic knowledge but also lifelong friendships and invaluable life skills. It was a period of growth and learning, shaping who I am today.</p>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = slides.children.length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
+
+
+
